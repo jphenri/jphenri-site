@@ -27,10 +27,6 @@ jobs:
       - name: Add .nojekyll file
         run: touch out/.nojekyll
 
-      # Si vous utilisez un domaine personnalisé, ajoutez cette étape
-      - name: Add CNAME file
-        run: echo "jphenri.com" > out/CNAME
-
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
